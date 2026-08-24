@@ -27,7 +27,9 @@ function App() {
           ) : (
             <ul>
               {tarefas.map((item) => (
-                <li key={item.id}> {item.title} </li>
+                <li key={item.id}> {item.title}
+                  {item.completed ? ' Concluído' : 'Pendente'}
+                </li>
               ))}
             </ul>
           )}
